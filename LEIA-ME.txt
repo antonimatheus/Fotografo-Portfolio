@@ -39,3 +39,5 @@ Formulário de contato: ao enviar, abre o WhatsApp com a mensagem pronta (não d
 Se editar o CSS ou os scripts, renomeie o arquivo (ex.: style.v3.css) e atualize os links nas páginas, para o navegador não usar a versão antiga em cache.
 
 Para publicar no Netlify: abra o site > Deploys > arraste a PASTA descompactada (não o zip) para a área de upload.
+
+Nota: o site pode ser exibido dentro de outros sites (iframe), por exemplo na vitrine do seu portfólio. Por isso não usamos o cabeçalho X-Frame-Options.
