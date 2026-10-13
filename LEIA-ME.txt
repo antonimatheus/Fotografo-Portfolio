@@ -1,0 +1,41 @@
+Estrutura do site
+
+index.html          página inicial (agora com depoimentos)
+about.html          sobre
+process.html        processo (agora com pacotes e valores)
+contact.html        contato
+work/               páginas dos trabalhos (bronx, minimalista, movve, 1)
+404.html            página de erro (usa caminhos a partir da raiz do domínio)
+robots.txt, sitemap.xml   para buscadores
+assets/css/         style.v2.css (estilo do Webflow já enxuto + acabamentos e seções novas, tudo em um arquivo)
+assets/js/          jQuery, scripts do Webflow (o maior já minificado, .min.js) e site.js (WhatsApp, galeria, formulário, carregamento adiado de imagens)
+assets/img/         favicon, webclip e fundo
+assets/site.webmanifest   ícone/nome quando salvo na tela inicial do celular
+.htaccess / _headers      compressão, cache e segurança (use o que combinar com sua hospedagem)
+
+DADOS DE EXEMPLO (fictícios) - troque pelos reais
+- E-mail: oi@jones.photo ........ procure e substitua em todas as páginas
+- Instagram: instagram.com/jones.foto | Facebook e X: jonesfoto
+- WhatsApp: 5511999999999 ....... edite a linha "whatsapp" no início de assets/js/site.js
+  (por garantia, procure e substitua o mesmo número nas páginas: ele aparece nos links "Pedir proposta")
+- Nome usado nos títulos e no rodapé: "Jones Fotografia"
+- Depoimentos (index.html): textos e nomes de exemplo. Troque por depoimentos reais de clientes.
+- Pacotes e valores (process.html): valores de exemplo. Ajuste conforme o seu preço.
+- DOMÍNIO: usei https://jones.photo como endereço oficial (canonical, sitemap.xml, robots.txt, og:url).
+  Se o seu domínio for outro, procure e substitua "https://jones.photo" em todos os arquivos.
+  Se o site ainda não tiver domínio próprio, remova as linhas canonical e og:url antes de publicar.
+
+RODAPÉ (novo): convite com botão de WhatsApp e e-mail, 4 colunas (marca e redes, navegação, trabalhos, contato) e "voltar ao topo".
+- Textos de exemplo que você pode ajustar: "Disponível para novos projetos", "Segunda a sábado, das 9h às 18h", "Resposta em até 24 horas",
+  telefone +55 11 99999-9999 e a frase de apresentação ao lado do logo.
+- O botão flutuante do WhatsApp some quando o rodapé aparece, para não ficar por cima dele.
+- Barra fina de progresso de leitura no topo (cor laranja do site).
+
+Menu: as páginas internas agora têm "Início" no menu (no celular aparece dentro do menu aberto). Também corrigi erros de digitação no menu ("Precesso", "Trabalho").
+Botão do WhatsApp: na home ele só aparece depois da tela de carregamento terminar.
+
+Formulário de contato: ao enviar, abre o WhatsApp com a mensagem pronta (não depende do Webflow).
+
+Se editar o CSS ou os scripts, renomeie o arquivo (ex.: style.v3.css) e atualize os links nas páginas, para o navegador não usar a versão antiga em cache.
+
+Para publicar no Netlify: abra o site > Deploys > arraste a PASTA descompactada (não o zip) para a área de upload.

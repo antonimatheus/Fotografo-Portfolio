@@ -1,0 +1,16 @@
+{
+  "name": "Jones Fotografia",
+  "short_name": "Jones",
+  "lang": "pt-BR",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#e5e3dc",
+  "theme_color": "#e5e3dc",
+  "icons": [
+    {
+      "src": "/assets/img/webclip.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    }
+  ]
+}
